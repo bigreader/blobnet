@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	--bg: #213;
+	--text: #fff;
+	--accent: orange;
+	font-family: 'Abel', sans-serif;
+	background: var(--bg);
+	color: var(--text);
+}
+
+body {
+	margin: 0;
+}
+
+button {
+	touch-action: manipulation;
+}
+
+/* TITLE */
+
+.title {
+	display: none;
+	width: 100%;
+	background: linear-gradient(to bottom, var(--bg), var(--accent));
+	padding: 0.5em;
+	text-align: center;
+	font-size: 2em;
+}
+
+/* TALLY */
+
+.tallyLine {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.tally {
+	width: 8em;
+	height: 8em;
+	position: relative;
+}
+
+.tallyVal {
+	font-size: 4em;
+	line-height: 2em;
+	text-align: center;
+	width: 100%;
+}
+
+.tally button {
+	background: none;
+	margin: 0;
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+}
+
+.tally button[data-action="plus"] {
+	right: 0;
+	/*background: #0f02;*/
+}
+
+.tally button[data-action="minus"] {
+	left: 0;
+	/*background: #f002;*/
+}
+
+/* TOGGLE */
+
+.toggleRow {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.toggleRow button {
+	background: none;
+	margin: 0;
+	border: none;
+	padding: 0;
+	height: 4em;
+	width: 4em;
+}
+
+.toggleRow.toggleLarge button {
+	height: 8em;
+	width: 8em;
+}
+
+.toggleRow button[data-toggle="off"] {
+	filter: grayscale(100%) blur(2px) brightness(70%);
+}
+
+/* RESET */
+
+.reset {
+	display: block;
+	width: 90%;
+	margin: 2em auto;
+	background: none;
+	color: var(--text);
+	border: 1px solid var(--accent);
+	border-radius: 0.5em;
+	font-size: 2em;
+	padding: 0.25em;
+}

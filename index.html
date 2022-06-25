@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<title>Blobnet</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="title">
+		Star Realms
+	</div>
+
+	<div class="tallyLine">
+		<div class="tally" data-stat="trade">
+			<button data-action="plus"></button>
+			<button data-action="minus"></button>
+			<div class="tallyVal">0</div>
+		</div>
+
+		<div class="tally" data-stat="combat">
+			<button data-action="plus"></button>
+			<button data-action="minus"></button>
+			<div class="tallyVal">0</div>
+		</div>
+
+		<div class="tally" data-stat="heal">
+			<button data-action="plus"></button>
+			<button data-action="minus"></button>
+			<div class="tallyVal">0</div>
+		</div>		
+	</div>
+
+	<div class="toggleRow" data-icon="scrap" data-count="8"></div>
+	<div class="toggleRow" data-icon="warp" data-count="7"></div>
+	<div class="toggleRow" data-icon="destroy" data-count="6"></div>
+
+	<div class="toggleRow toggleLarge">
+		<button data-icon="faction-star"></button>
+		<button data-icon="faction-trade"></button>
+		<button data-icon="faction-machine"></button>
+		<button data-icon="faction-blob"></button>
+	</div>
+
+	<button class="reset">RESET</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script.js"></script>
+</body>
+</html>
