@@ -17,6 +17,7 @@ body {
 
 button {
 	touch-action: manipulation;
+	font-family: 'Abel', sans-serif;
 }
 
 /* TITLE */
